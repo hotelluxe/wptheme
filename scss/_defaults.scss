@@ -1,0 +1,47 @@
+.container {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.content {
+    float:left;
+    width:65%;
+    margin-right: 5%;
+
+}
+
+.full {
+    width:100%;
+}
+
+/*tables*/
+table td {
+    padding:10px;
+}
+table tr td:first {
+    padding-right: 0;
+}
+
+/*def lists*/
+dt {
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+dd {
+    padding:10px;
+    margin-left: 10px;
+}
+
+/*lists*/
+ul li,ol li {
+    padding:3px;
+}
+
+/*PRE*/
+
+pre {
+    background: #F7F7F7;
+    padding:10px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+}
