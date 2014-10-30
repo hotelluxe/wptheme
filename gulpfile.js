@@ -10,7 +10,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('**/*.scss')
+    return gulp.src('scss/*.scss')
 	.pipe(sass())
 	.pipe(gulp.dest('./'))
 	.pipe(reload({stream: true}));
