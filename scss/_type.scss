@@ -1,0 +1,28 @@
+body {
+  color:#333;
+}
+
+/* links */
+a {
+    color:#BA209B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D424B1;
+}
+
+/* paragraphs */
+p {
+    line-height: 1.5;
+}
+
+/*blockquotes*/
+blockquote {
+    background: #F7F7F7;
+    margin:0;
+    padding:20px;
+}
+blockquote p {
+    margin-top: 0;
+}
