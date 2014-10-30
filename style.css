@@ -10,15 +10,16 @@ Author URI: http://hackeryou.com
                    Base styles
    ========================================================================== */
 body {
-  color: #333; }
+  font-family: 'Roboto', 'Sans-serif';
+  color: #666; }
 
 /* links */
 a {
-  color: #BA209B;
+  color: #A02621;
   text-decoration: none; }
 
 a:hover {
-  color: #D424B1; }
+  color: #D85252; }
 
 /* paragraphs */
 p {
@@ -259,6 +260,37 @@ footer {
 /* =============================================================================
                    Navigation
    ========================================================================== */
+header {
+  width: 100%;
+  height: 99px;
+  background: #E4E3EE; }
+
+.logo {
+  float: left;
+  width: 250px;
+  background: #485774;
+  padding: 15px;
+  text-align: center; }
+
+.logo a {
+  color: #FFF;
+  font-size: 1.25em;
+  font-weight: 300; }
+
+.logo h1 {
+  margin: 0; }
+
+.logo h2 {
+  margin: 0;
+  color: #FFF;
+  font-size: 0.8em;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+#menu-header-menu {
+  float: left;
+  padding: 40px 40px; }
+
 ul.menu {
   margin: 0;
   padding: 0; }
@@ -268,10 +300,12 @@ ul.menu li {
   margin-right: 10px; }
 
 ul.menu li a {
-  color: #333;
-  padding: 10px;
-  background: #333;
-  color: white; }
+  color: #666;
+  padding: 10px; }
+
+ul.menu li a:hover {
+  color: #888;
+  padding: 10px; }
 
 /* =============================================================================
                    Comment Styling
