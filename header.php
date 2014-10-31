@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 
 <header class="clearfix">
-  <div class="container">
+  <div class="container clearfix">
     <div class="logo">
       <h1>
         <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
