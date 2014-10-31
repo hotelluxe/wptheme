@@ -1,9 +1,10 @@
 .hero {
     position: relative;
-    background: url('images/slider_1.png');
+    background: url('images/hero1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    background-position: center;
+    height: 375px;
     z-index: -2;
     p {
 	margin-top: 0;
@@ -12,10 +13,9 @@
 
 .wrapper {
     margin: 0 auto;
-    width: 80%;
-    max-width: 960px;
+    margin-top: -50px;
     padding: 50px;
-    background: #444;
+    background: #FFF;
     z-index: 998;
 }
 
@@ -24,6 +24,17 @@
     width: 33.333%;
 }
 
-.content {
-    padding: 50px 0;
+.content-front {
+    padding: 50px;
+}
+
+.form-booking {
+    width: 275px;
+    height: 400px;
+    padding: 25px;
+    background: #E4E3EE;
+    h3 {
+        font-weight: 300;
+        text-align: center;
+    }
 }
