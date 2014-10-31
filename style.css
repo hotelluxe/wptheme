@@ -314,6 +314,7 @@ ul.menu li a:hover {
   display: none; }
 
 .xoxo {
+  position: relative;
   margin: 0;
   float: right;
   width: 163px;
@@ -321,8 +322,11 @@ ul.menu li a:hover {
   background: #FFF; }
 
 #acurax_si_widget_simple {
-  float: right;
-  width: 165px; }
+  width: 165px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translatey(-50%) translatex(-50%); }
 
 /* =============================================================================
                    Comment Styling
@@ -505,15 +509,18 @@ p.form-allowed-tags, .nocomments {
     margin-top: 0; }
 
 .wrapper {
-  position: relative;
   margin: 0 auto;
   width: 80%;
   max-width: 960px;
-  background: #FFF;
+  padding: 50px;
+  background: #444;
   z-index: 998; }
 
 .front-page-rooms {
   float: left;
   width: 33.333%; }
+
+.content {
+  padding: 50px 0; }
 
 /*# sourceMappingURL=style.css.map */
