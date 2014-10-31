@@ -1,0 +1,23 @@
+.hero {
+  background: url('images/slider_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  p {
+    margin-top: 0;
+  }
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+    background: #FFF;
+    z-index: 998;
+}
+
+.front-page-rooms {
+    float: left;
+    width: 33.333%;
+}

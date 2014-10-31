@@ -1,20 +1,21 @@
 header {
 	width: 100%;
-	height: 99px;
+	height: 80px;
 	background: #E4E3EE;
 }
 
 .logo {
   float: left;
-  width: 250px;
+  width: 275px;
+  height: 80px;
   background: #485774;
-  padding: 15px;
+  padding: 10px 15px;
   text-align: center;
 }
 
 .logo a {
   color: #FFF;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 300;
 }
 
@@ -25,14 +26,14 @@ header {
 .logo h2 {
   margin: 0;
   color: #FFF;
-  font-size: 0.8em;
+  font-size: 0.65em;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 #menu-header-menu {
   float: left;
-  padding: 40px 40px;
+  padding: 30px 40px;
 }
 
 ul.menu {
@@ -45,10 +46,30 @@ ul.menu li {
 
 ul.menu li a {
   color: #666;
-  padding: 10px;
+  padding: 5px 10px;
  }
 
  ul.menu li a:hover {
-  color: #888;
-  padding: 10px;
+  color: #7888A0;
+ }
+
+ .widget-container-social {
+  padding-top: 6px;
+ }
+
+ .widget-title-social {
+ 	display: none;
+ }
+
+ .xoxo {
+ 	margin: 0;
+ 	float: right;
+ 	width: 163px;
+ 	height: 80px;
+ 	background: #FFF;
+ }
+
+ #acurax_si_widget_simple {
+ 	float: right;
+ 	width: 165px;
  }

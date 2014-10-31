@@ -164,8 +164,20 @@ function hackeryou_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+    // Area 2, located in the header at top right.
+	register_sidebar( array(
+		'name' => 'Header Widget Area',
+		'id' => 'header-widget-area',
+		'description' => 'The header widget area',
+		'before_widget' => '<p id="%1$s" class="widget-container-social %2$s">',
+		'after_widget' => '</p>',
+		'before_title' => '<h3 class="widget-title-social">',
+		'after_title' => '</h3>',
+	) );
 
 }
+
+
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
 
