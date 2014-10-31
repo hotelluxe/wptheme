@@ -36,6 +36,10 @@
       'theme_locations' => 'primary'
     )); ?>
 
+    <ul class="xoxo">
+    <?php  dynamic_sidebar( 'header-widget-area' ); ?>
+  </ul>
+
   </div> <!-- /.container -->
 </header><!--/.header-->
 
