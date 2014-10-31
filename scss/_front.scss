@@ -9,15 +9,19 @@
 }
 
 .wrapper {
-    position: relative;
     margin: 0 auto;
     width: 80%;
     max-width: 960px;
-    background: #FFF;
+    padding: 50px;
+    background: #444;
     z-index: 998;
 }
 
 .front-page-rooms {
     float: left;
     width: 33.333%;
+}
+
+.content {
+    padding: 50px 0;
 }

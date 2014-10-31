@@ -14,8 +14,8 @@ get_header();  ?>
   </div> <!-- /.container -->
 </div> <!-- .hero -->
 
-<div class="wrapper">
-  <div class="front-page-rooms clearfix">
+<div class="wrapper clearfix">
+  <div class="front-page-rooms">
     <img src="" alt="Image 1">
   </div>
   <div class="front-page-rooms">
@@ -27,12 +27,9 @@ get_header();  ?>
   
   <div class="content">
 
-<?php
-$content = get_the_content('Read more');
-print $content;
-?>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ullam, officiis sapiente dolore dolor tempore possimus iusto suscipit in mollitia! Laborum dolorum qui delectus deleniti, magni, nostrum ut dignissimos sunt.
 
-    </div> <!-- /,content -->
+  </div> <!-- /.content -->
 
 
 </div>
