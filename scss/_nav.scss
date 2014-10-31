@@ -5,12 +5,30 @@ header {
 }
 
 .logo {
-  float: left;
-  width: 275px;
-  height: 80px;
-  background: #485774;
-  padding: 10px 15px;
-  text-align: center;
+    position: relative;
+    float: left;
+    width: 275px;
+    height: 80px;
+    background: #485774;
+    padding: 10px 15px;
+    text-align: center;
+    z-index: 100;
+    &:after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	content: " ";
+	display: block;
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-left-width: 137.5px;
+	border-right-width: 137.5px;
+	border-bottom-width: 0;
+	border-top-color: #485774;
+	border-top-width: 50px;
+    }
 }
 
 .logo a {
@@ -40,22 +58,36 @@ header {
       display: block;
       float: left;
       line-height: 80px;
+      z-index: 100;
+      padding-left: 1em;
   }
   & > li > ul {
       position: absolute;
       top: 100%;
       left: 0;
+      min-width: 100%;
       padding-left: 0;
       background: #fff;
       visibility: hidden;
-      transform: translateY(-100%) translateZ(-1px);
       opacity: 0;
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-      z-index: -1;
+      transition: opacity 0.5s linear;
+      & > li {
+	  display: inline-block;
+	  border-bottom: 1px solid #E4E3EE;
+	  width: 100%;
+	  &:last-child {
+	      border-bottom-width: 0;
+	  }
+	  &:hover {
+	      background-color: #E4E3EE;
+	  }
+	  & > a {
+	      display: block;
+	  }
+      }
   }
   & > li:hover > ul {
       visibility: visible;
-      transform: translateY(0%);
       opacity: 1;
   }
 }
