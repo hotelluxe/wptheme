@@ -1,3 +1,5 @@
-$(function(){
-	//your jQuery here
-});
+(function($) {
+    $(function() {
+	
+    });
+})(jQuery);
