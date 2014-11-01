@@ -1,3 +1,18 @@
 footer {
-  clear:both;
+    clear:both;
+    position: relative;
+    .container {
+	padding: 50px;
+	position: relative;
+    }
+}
+
+#menu-fine-print {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+.widget-map {
+    float: right;
 }

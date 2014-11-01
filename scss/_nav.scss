@@ -61,6 +61,13 @@ header {
       line-height: 80px;
       z-index: 100;
       padding-left: 1em;
+      a {
+	  display: block;
+	  color: #666;
+	  &:hover {
+	      color: #7888A0;
+	  }
+      }
   }
   & > li > ul {
       position: absolute;
@@ -82,9 +89,6 @@ header {
 	  &:hover {
 	      background-color: #E4E3EE;
 	  }
-	  & > a {
-	      display: block;
-	  }
       }
   }
   & > li:hover > ul {
@@ -92,47 +96,33 @@ header {
       opacity: 1;
   }
 }
-
 ul.menu {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-ul.menu li {
-    display: inline;
-    margin-right: 10px;
+.widget-container-social {
+    padding-top: 6px;
 }
 
-ul.menu li a {
-    color: #666;
-    padding: 5px 10px;
+.widget-title-social {
+    display: none;
 }
 
- ul.menu li a:hover {
-  color: #7888A0;
- }
+.xoxo {
+    position: relative;
+    margin: 0;
+    float: right;
+    width: 163px;
+    height: 80px;
+    background: #FFF;
+}
 
- .widget-container-social {
-  padding-top: 6px;
- }
-
- .widget-title-social {
- 	display: none;
- }
-
- .xoxo {
- 	position: relative;
- 	margin: 0;
- 	float: right;
- 	width: 163px;
- 	height: 80px;
- 	background: #FFF;
- }
-
- #acurax_si_widget_simple {
- 	width: 165px;
- 	position: absolute;
- 	top: 50%;
- 	left: 50%;
- 	transform: translatey(-50%) translatex(-50%);
- }
+#acurax_si_widget_simple {
+    width: 165px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatey(-50%) translatex(-50%);
+}

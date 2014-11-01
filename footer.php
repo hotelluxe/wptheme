@@ -1,7 +1,18 @@
-<footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+<footer class="clearfix">
+  <div class="container clearfix">
+  <?php
+  wp_nav_menu( array(
+    'container' => false,
+    'theme_location' => 'footer'
+  ) );
+  ?>
+  <?php
+  if ( is_active_sidebar( 'footer-widget-area' ) ) :
+   dynamic_sidebar( 'footer-widget-area' );
+  endif;
+  ?>
   </div>
+    
 </footer>
 
 <script>
