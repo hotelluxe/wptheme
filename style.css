@@ -262,12 +262,29 @@ header {
   background: #E4E3EE; }
 
 .logo {
+  position: relative;
   float: left;
   width: 275px;
   height: 80px;
   background: #485774;
   padding: 10px 15px;
-  text-align: center; }
+  text-align: center;
+  z-index: 100; }
+  .logo:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: " ";
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-left-width: 137.5px;
+    border-right-width: 137.5px;
+    border-bottom-width: 0;
+    border-top-color: #485774;
+    border-top-width: 50px; }
 
 .logo a {
   color: #FFF;
@@ -286,27 +303,38 @@ header {
 
 #menu-header-menu {
   float: left;
-  height: 80px; }
+  height: 80px;
+  text-align: center; }
   #menu-header-menu > li {
     position: relative;
     height: 80px;
     display: block;
     float: left;
-    line-height: 80px; }
+    line-height: 80px;
+    z-index: 100;
+    padding-left: 1em; }
   #menu-header-menu > li > ul {
     position: absolute;
     top: 100%;
     left: 0;
+    min-width: 100%;
     padding-left: 0;
     background: #fff;
     visibility: hidden;
-    transform: translateY(-100%) translateZ(-1px);
     opacity: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    z-index: -1; }
+    transition: opacity 0.5s linear; }
+    #menu-header-menu > li > ul > li {
+      display: inline-block;
+      border-bottom: 1px solid #E4E3EE;
+      width: 100%; }
+      #menu-header-menu > li > ul > li:last-child {
+        border-bottom-width: 0; }
+      #menu-header-menu > li > ul > li:hover {
+        background-color: #E4E3EE; }
+      #menu-header-menu > li > ul > li > a {
+        display: block; }
   #menu-header-menu > li:hover > ul {
     visibility: visible;
-    transform: translateY(0%);
     opacity: 1; }
 
 ul.menu {
@@ -519,27 +547,35 @@ p.form-allowed-tags, .nocomments {
 
 .hero {
   position: relative;
-  background: url("images/slider_1.png");
+  background: url("images/hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
-  z-index: -2; }
+  background-position: center;
+  height: 375px; }
   .hero p {
     margin-top: 0; }
 
 .wrapper {
   margin: 0 auto;
-  width: 80%;
-  max-width: 960px;
+  margin-top: -50px;
   padding: 50px;
-  background: #444;
-  z-index: 998; }
+  background: #FFF;
+  z-index: 999; }
 
 .front-page-rooms {
   float: left;
   width: 33.333%; }
 
-.content {
-  padding: 50px 0; }
+.content-front {
+  padding: 50px; }
+
+.form-booking {
+  width: 275px;
+  height: 400px;
+  padding: 25px;
+  background: #E4E3EE; }
+  .form-booking h3 {
+    font-weight: 300;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
