@@ -28,12 +28,43 @@
 }
 
 .form-booking {
+    position: relative;
     width: 275px;
-    height: 400px;
+    height: 375px;
     padding: 25px;
     background: #E4E3EE;
     h3 {
+        padding-top: 20px;
+        margin-bottom: 6px;
         font-weight: 300;
         text-align: center;
     }
+}
+
+form {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -54%);
+}
+
+input {
+    margin: 0 auto;
+    width: 200px;
+    color: #CCC;
+    font-size: 0.7em;
+    padding: 5px;
+    margin-bottom: 3%;
+}
+
+input.submit {
+    position: absolute;
+/*    top: 50%;*/
+    left: 50%;
+    transform: translatex(-50%);
+    width: 125px;
+    background: #F1AF29;
+    border: 1px solid #F1AF29;
+    border-radius: 10px;
+    text-align: center;
 }
