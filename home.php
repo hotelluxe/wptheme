@@ -33,6 +33,7 @@ get_header();  ?>
 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ullam, officiis sapiente dolore dolor tempore possimus iusto suscipit in mollitia! Laborum dolorum qui delectus deleniti, magni, nostrum ut dignissimos sunt.
 
+    <?php get_template_part( 'loop', 'home' ); ?>
   </div> <!-- /.content-front -->
 
 
