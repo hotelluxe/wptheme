@@ -22,7 +22,8 @@ if ( ! function_exists( 'theme_setup' ) ):
          * You can allow clients to create multiple menus by
          * adding additional menus to the array. */
         register_nav_menus( array(
-            'primary' => 'Primary Navigation'
+            'primary' => 'Primary Navigation',
+            'footer' => 'Footer'
         ) );
 
         /*
@@ -174,7 +175,16 @@ function hackeryou_widgets_init() {
 		'before_title' => '<h3 class="widget-title-social">',
 		'after_title' => '</h3>',
 	) );
-
+    // Area 3, located in the header at top right.
+	register_sidebar( array(
+		'name' => 'Footer Widget Area',
+		'id' => 'footer-widget-area',
+		'description' => 'The footer widget area',
+		'before_widget' => '<div class="widget-map"',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title-map">',
+		'after_title' => '</h3>',
+	) );
 }
 
 
