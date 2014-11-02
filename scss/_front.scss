@@ -11,19 +11,24 @@
 }
 
 .wrapper {
-    margin: 0 auto;
-    padding: 50px;
+    margin: -35px auto;
+    padding: 40px;
     background: #FFF;
     z-index: 999;
 }
 
 .front-page-rooms {
     float: left;
-    width: 33.333%;
+    width: 29.333%;
+    margin: 0 2%;
+    height: 200px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
 }
 
 .content-front {
-    padding: 50px;
+    padding: 25px 60px;
 }
 
 .form-booking {

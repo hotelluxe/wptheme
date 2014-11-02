@@ -28,13 +28,13 @@ get_header();  ?>
   <div class="container">
     <div class="wrapper clearfix">
       <div class="front-page-rooms">
-	<img src="" alt="Image 1">
+	<img src="<?php bloginfo('template_url')?>/images/room1.jpg" alt="Penthouse Suite">
       </div>
       <div class="front-page-rooms">
-	<img src="" alt="Image 1">
+	<img src="<?php bloginfo('template_url')?>/images/room2.jpg" alt="Deluxe Suite">
       </div>
       <div class="front-page-rooms">
-	<img src="" alt="Image 1">
+	<img src="<?php bloginfo('template_url')?>/images/room3.jpg" alt="Single Suite">
       </div> <!-- .wrapper -->
     </div>
     
