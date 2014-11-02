@@ -14,6 +14,7 @@
 	$('.gallery').each(function(i, defaultGallery) {
 	    var $defaultGallery = $(defaultGallery);
 	    var $images = $defaultGallery.find('img');
+	    $images.css('height', 'auto');
 	    var $gallery = $('<div>').addClass('custom-gallery clearfix');
 	    $gallery.css({
 		'position': 'relative',
