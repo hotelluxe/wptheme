@@ -9,7 +9,6 @@
 
     <?php // Load our CSS ?>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <?php wp_head(); ?>
   </head>
