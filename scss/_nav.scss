@@ -60,7 +60,7 @@ header {
       float: left;
       line-height: 80px;
       z-index: 100;
-      padding-left: 1em;
+      padding: 0 2em;
       a {
 	  display: block;
 	  color: #666;
@@ -96,6 +96,7 @@ header {
       opacity: 1;
   }
 }
+
 ul.menu {
     padding: 0;
     margin: 0;
