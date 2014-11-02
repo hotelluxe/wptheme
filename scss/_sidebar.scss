@@ -4,12 +4,25 @@
     margin-left: 4%;
     padding-bottom: 25px;
     background: #FFF;
-    border: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    list-style-type: none;
+    h2 {
+    	padding-left: 4px;
+    	font-size: 1.3em;
+    	font-weight: 300;
+    	color: #485774;
+    }
+    h3 {
+    	font-size: 1.3em;
+    	font-weight: 300;
+    	color: #485774;
+    }
 }
 .sidebar ul {
     margin:0;
     padding:0;
+    list-style-type: none;
 }
 .sidebar ul li {
-    list-style: none;
+    list-style-type: none;
 }
