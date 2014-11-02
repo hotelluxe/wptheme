@@ -14,12 +14,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('serve', function() {
-
     watch('**/*.scss', function() {
 	gulp.start('sass');
     })
-
-    watch('js/**/*.js')
-
-    watch('**/*.php')
 });

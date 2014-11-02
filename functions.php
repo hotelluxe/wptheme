@@ -1,5 +1,14 @@
 <?php
 
+remove_shortcode('gallery');
+add_shortcode('gallery', 'custom_size_gallery');
+
+function custom_size_gallery($attr) {
+    // Change size here - medium, large, full
+    $attr['size'] = 'large';
+    return gallery_shortcode($attr);
+}
+
 /** Tell WordPress to run theme_setup() when the 'after_setup_theme' hook is run. */
 
 if ( ! function_exists( 'theme_setup' ) ):
@@ -50,7 +59,7 @@ function hackeryou_scripts() {
 	wp_deregister_script('jquery');
     wp_enqueue_script(
         'jquery',
-        "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+        "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js",
         false, //dependencies
         null, //version number
         true //load in footer
