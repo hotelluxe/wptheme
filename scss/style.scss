@@ -13,6 +13,9 @@ Author URI: http://hackeryou.com
    ========================================================================== */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic);
+
+	    @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+			
 @import "type";
 
 /* =============================================================================
@@ -62,4 +65,15 @@ img.alignright    { padding-left: 5px; }
 
 @import "comment";
 
+/* =============================================================================
+                   Gallery Slider Styling
+   ========================================================================== */
+
+@import "gallery";
+
+/* =============================================================================
+                   Home Page Styling
+   ========================================================================== */
+
 @import "front";
+

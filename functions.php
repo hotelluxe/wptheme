@@ -1,5 +1,14 @@
 <?php
 
+remove_shortcode('gallery');
+add_shortcode('gallery', 'custom_size_gallery');
+
+function custom_size_gallery($attr) {
+    // Change size here - medium, large, full
+    $attr['size'] = 'large';
+    return gallery_shortcode($attr);
+}
+
 /** Tell WordPress to run theme_setup() when the 'after_setup_theme' hook is run. */
 
 if ( ! function_exists( 'theme_setup' ) ):
