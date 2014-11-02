@@ -1,12 +1,20 @@
 .container {
+    width: 80%;
     max-width:1200px;
     margin:0 auto;
 }
 
+.container-2 {
+    width: 80%;
+    max-width:1200px;
+    margin:0 auto;
+    padding-top: 50px;
+}
+
 .content {
-    float:left;
-    width:65%;
-    margin-right: 5%;
+    float: left;
+    width: 60%;
+    margin: 0 3%;
 
 }
 
