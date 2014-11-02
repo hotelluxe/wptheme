@@ -1,9 +1,8 @@
 (function($) {
-
     // Given a jQuery collection containing at least 1 image, return true
     // if image wider than gallery box, false otherwise.
     function aspectRatio($image, $container) {
-	var imageAspect = $image.width() / $image.height();
+	var imageAspect = $image.data('aspect');
 	var containerAspect = $container.width() / $container.height();
 	if (imageAspect > containerAspect) {
 	    return true;
@@ -15,11 +14,12 @@
 	$('.gallery').each(function(i, defaultGallery) {
 	    var $defaultGallery = $(defaultGallery);
 	    var $images = $defaultGallery.find('img');
+	    $images.css('height', 'auto');
 	    var $gallery = $('<div>').addClass('custom-gallery clearfix');
 	    $gallery.css({
 		'position': 'relative',
 		'margin': '0 auto',
-		'width': '500px',
+		'width': '50%',
 		'height': '300px',
 		'overflow': 'hidden'
 	    });
@@ -27,13 +27,14 @@
 	    $images.each(function(i, image) {
 		var $image = $(image);
 		var $newImage = $('<img>').attr('src', $image.attr('src'));
+		$newImage.data('aspect', $image.width() / $image.height());
 		var newImageStyle = {
 		    'position': 'absolute',
 		    'top': '50%',
 		    'left': '50%',
 		    'transform': 'translateX(-50%) translateY(-50%)'
 		};
-		if (aspectRatio($image, $gallery)) {
+		if (aspectRatio($newImage, $gallery)) {
 		    newImageStyle['width'] = '100%';
 		    newImageStyle['height'] = 'auto';
 		} else {
@@ -59,7 +60,7 @@
 		    'left': '0',
 		    'height': '100%',
 		    'width': 100 * $images.length + '%',
-		    'transition': 'left 0.5s cubic-bezier(.83,.08,.26,.89)'
+		    'transition': 'transform 0.5s cubic-bezier(.83,.08,.26,.89)'
 		});
 		$gallery.append($slider);
 	    });
@@ -93,14 +94,18 @@
 	    // add slider to DOM
 	    $defaultGallery.after($gallery);
 
+	    var numImages = $images.length;
+	    var currentImage = 1;
+
 	    $gallery = $defaultGallery.next();
 	    $defaultGallery.remove();
 	    $gallery.find('.fa-angle-right').on('click', function() {
 		var $icon = $(this);
 		var $container = $icon.closest('.custom-gallery');
-		if (parseInt($container.find('.slider').css('left'), 10) > - $container.width() * ($images.length - 1)) {
+		if (currentImage < numImages) {
+		    currentImage++;
 		    $container.find('.slider').css({
-			'left': '-=' + $container.width()
+			'transform': 'translateX(-' + (currentImage - 1) / numImages * 100 + '%)'
 		    });
 		}
 	    });
@@ -108,11 +113,29 @@
 	    $gallery.find('.fa-angle-left').on('click', function() {
 		var $icon = $(this);
 		var $container = $icon.closest('.custom-gallery');
-		if (parseInt($container.find('.slider').css('left'), 10) < 0) {
+		if (currentImage > 0) {
+		    currentImage--;
 		    $container.find('.slider').css({
-			'left': '+=' + $container.width()
+			'transform': 'translateX(-' + (currentImage - 1) / numImages * 100 + '%)'
 		    });
 		}
+	    });
+
+	    $(window).on('resize orientationchange', function() {
+		$gallery.find('img').each(function(i, image) {
+		    var $image = $(image);
+		    if (aspectRatio($image, $gallery)) {
+			$image.css({
+			    'width': '100%',
+			    'height': 'auto'
+			});
+		    } else {
+			$image.css({
+			    'width': 'auto',
+			    'height': '100%'
+			});
+		    }
+		});
 	    });
 	});
     });
