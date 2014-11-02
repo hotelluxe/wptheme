@@ -1,3 +1,39 @@
+h1 {
+    margin-bottom: 1%;
+    font-size: 2em;
+    font-weight: 300;
+    color: #485774;
+}
+
+h2.comments-title {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #485774;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+.meta-prep, 
+.meta-sep {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.entry-utility {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.entry-date, 
+.author {
+    font-size: 0.8em;
+}
+
 .container {
     width: 80%;
     max-width:1200px;
@@ -15,7 +51,6 @@
     float: left;
     width: 60%;
     margin: 0 3%;
-
 }
 
 .full {
