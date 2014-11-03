@@ -12,6 +12,10 @@
     p {
 	margin-top: 0;
     }
+    & + .container {
+	position: relative;
+	z-index: 100;
+    }
 }
 
 .wrapper {
