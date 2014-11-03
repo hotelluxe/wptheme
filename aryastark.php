@@ -38,8 +38,24 @@ get_header();  ?>
       </div> <!-- .wrapper -->
     </div>
     
-    <div class="content-front">
+    <div class="content-front home-float">
       <?php get_template_part( 'loop', 'home' ); ?>
+    </div> <!-- /.content-front -->
+    <div class="content-front-2 home-float">
+      <img src="<?php bloginfo('template_url')?>/images/home.jpg" alt="Penthouse Suite">
+    </div> <!-- /.content-front -->
+    <div class="content-front-3 home-float">
+      <h3>Hotel Overview</h3>
+      <ul>
+        <li>125 Luxury Suites</li>
+        <li>5 Star Restaurant</li>
+        <li>Continental Breakfast</li>
+        <li>Infinity Pool</li>
+        <li>Ocean Front View</li>
+        <li>24 hour Concierge</li>
+        <li>125 Luxury Suites</li>
+        <li>Free Airport Shuttle Service</li>
+      </ul>
     </div> <!-- /.content-front -->
 
 

@@ -6,6 +6,9 @@ footer {
     padding: 50px;
     position: relative;
     }
+    h3 {
+        color: #F1AF29;
+    }
     .menu ul li {
         list-style-type: none; 
     }
@@ -34,9 +37,28 @@ footer {
 }
 
 .widget-map {
-    float: right;
-    text-align: center;
+    display: inline-block;
+    width: 27%;
+    margin: 0 3%;
+    text-align: left;
     p {
 	margin-bottom: 0;
+    color: #FFF;
     }
+    h3 {
+        color: #F1AF29;
+    }
+    a:link, a:visited {
+        color: #FFF;
+    }
+    a:hover, a:active {
+        color: #E4E3EE;
+    }
+}
+
+#menu-footer-menu {
+    display: none;
+}
+h3 {
+    color: #F1AF29;
 }
