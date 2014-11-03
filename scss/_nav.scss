@@ -61,6 +61,10 @@ header {
       line-height: 80px;
       z-index: 100;
       padding: 0 2em;
+      border-left: 1px solid #fff;
+      &:first-child {
+	  border-left-width: 0px;
+      }
       a {
 	  display: block;
 	  color: #666;
