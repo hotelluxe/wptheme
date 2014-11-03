@@ -31,7 +31,7 @@
 	    $gallery.css({
 		'position': 'relative',
 		'margin': '0 auto',
-		'width': '50%',
+		'width': '100%',
 		'height': '300px',
 		'overflow': 'hidden'
 	    });
