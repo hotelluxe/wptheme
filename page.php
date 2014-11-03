@@ -1,7 +1,7 @@
 <?php get_header();  ?>
 
-<div class="main">
-  <div class="container">
+<div class="main static-page">
+  <div class="container clearfix">
 
     <div class="content">
       

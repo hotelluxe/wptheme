@@ -79,6 +79,7 @@ header {
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.5s linear;
+      border: 1px solid #E4E3EE;
       & > li {
 	  display: inline-block;
 	  border-bottom: 1px solid #E4E3EE;

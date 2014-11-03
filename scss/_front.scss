@@ -1,3 +1,7 @@
+.static-page {
+    padding-top: 50px;
+}
+
 .hero {
     position: relative;
     background: url('images/hero1.jpg');
@@ -7,6 +11,10 @@
     height: 375px;
     p {
 	margin-top: 0;
+    }
+    & + .container {
+	position: relative;
+	z-index: 100;
     }
 }
 
