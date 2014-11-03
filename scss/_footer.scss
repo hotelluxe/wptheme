@@ -1,9 +1,29 @@
 footer {
     clear:both;
     position: relative;
+    background: #485774;
     .container {
-	padding: 50px;
-	position: relative;
+    padding: 50px;
+    position: relative;
+    }
+    .menu ul li {
+        list-style-type: none; 
+    }
+    .menu ul li a {
+        font-size: 0.8em;
+        font-weight: 300;
+        color: #FFF;
+    &:hover {
+        color: #E4E3EE;
+    }
+  }
+}
+
+.footer-loop {
+    background: #FFF;
+    p {
+        font-size: 0.8em;
+        color: #888;
     }
 }
 
