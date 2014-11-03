@@ -10,6 +10,33 @@
     $logotext.html(html);
 })(jQuery);
 
+// Change hero image every 10 seconds
+// Use images in div.front-page-rooms as sources
+(function($) {
+    var $hero = $('.hero');
+    if ($hero.length == 0) {
+	return;
+    }
+    var $backgrounds = $('.front-page-rooms img');
+    var urls = [];
+    $backgrounds.each(function(i, image) {
+	urls.push($(image).attr('src'));
+    });
+    $hero.css({
+	'transition': 'background-image 2s linear',
+	'background-image': 'url("' + urls[0] + '")'
+    });
+    var currentBackground = 1;
+    window.setInterval(function() {
+	$hero.css('background-image', 'url("' + urls[currentBackground] + '")');
+	if (currentBackground == urls.length - 1) {
+	    currentBackground = 0;
+	} else {
+	    currentBackground++;
+	}
+    }, 10000);
+})(jQuery);
+
 (function($) {
     // Given a jQuery collection containing at least 1 image, return true
     // if image wider than gallery box, false otherwise.
