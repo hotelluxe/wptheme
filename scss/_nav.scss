@@ -60,11 +60,11 @@ header {
       float: left;
       line-height: 80px;
       z-index: 100;
-      padding: 0 2em;
       border-left: 1px solid #fff;
       &:first-child {
 	  border-left-width: 0px;
       }
+      padding: 0 1em 0 3.5em;
       a {
 	  display: block;
 	  color: #666;
@@ -118,9 +118,9 @@ ul.menu {
 
 .xoxo {
     position: relative;
-    margin: 0;
+    margin: 0 30px 0 0;
     float: right;
-    width: 25%;
+    width: 14%;
     height: 80px;
     background: #FFF;
 }
