@@ -60,6 +60,10 @@ header {
       float: left;
       line-height: 80px;
       z-index: 100;
+      border-left: 0px solid #fff;
+      &:first-child {
+	  border-left: 0px;
+      }
       padding: 0 1em 0 3.5em;
       a {
 	  display: block;

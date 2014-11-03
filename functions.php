@@ -184,7 +184,7 @@ function hackeryou_widgets_init() {
 		'before_title' => '<h3 class="widget-title-social">',
 		'after_title' => '</h3>',
 	) );
-    // Area 3, located in the header at top right.
+    // Area 3, located in the footer.
 	register_sidebar( array(
 		'name' => 'Footer Widget Area',
 		'id' => 'footer-widget-area',
