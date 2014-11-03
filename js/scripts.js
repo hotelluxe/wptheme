@@ -1,4 +1,16 @@
 (function($) {
+    var $logotext = $('.logo > h1 > a');
+    if ($logotext.length == 0) {
+	return;
+    }
+    var text = $logotext.text();
+    var index = text.search(/\s\S+\s*$/);
+    var html = text.slice(0, index);
+    html += '<span style="color:#F1AF29">' + text.slice(index) + '</span>';
+    $logotext.html(html);
+})(jQuery);
+
+(function($) {
     // Given a jQuery collection containing at least 1 image, return true
     // if image wider than gallery box, false otherwise.
     function aspectRatio($image, $container) {
